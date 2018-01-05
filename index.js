@@ -15,5 +15,5 @@ bot.on('message', message => {
     if ((message.content === ("je t'aime Willi")) || (message.content === ("je t'aime willi")) || (message.content === ("jt'aime willi")) || (message.content === ("je t'aime willi !")) || (message.content === ("je t'aime Willi !")) || (message.content === ("je t'aime Willi !! <3")) || (message.content === ("je t'aime willi !!")))
         message.channel.send('Moi aussi :heart_eyes:')
     if ((message.content === ("t'as qu'elle age willi?")) || (message.content === ("quel âge as tu willi?")) || (message.content === ("qu'elle âge as-tu willi ?")) || (message.content === ("Qu'elle âge as-tu willi?")) || (message.content === ("t'as qu'elle age Willi?")) || (message.content === ("quel âge as tu Willi ?")) || (message.content === ("Willi t'as qu'elle âge ?")) || (message.content === ("willi t'as qu'elle age?")))
-        message.channel.send('J'ai 48 ans :older_man: ')
+        message.channel.send("J'ai 48 ans :older_man:")
     });
