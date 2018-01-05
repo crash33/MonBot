@@ -12,6 +12,6 @@ bot.on('message', message => {
         message.channel.send('Moi aussi :smirk:')
     if ((message.content === ("tu va bien willi ?")) || (message.content === ("Tu va bien willi?")) || (message.content === ("Tu va bien Willi ?")) || (message.content === ("tu va bien Willi?")) || (message.content === ("Tu va bien willi")) || (message.content === ("Tu va bien willi.")) || (message.content === ("Tu va bien willi..")) || (message.content === ("Tu va bien willi...")) || (message.content === ("tu va bien willi")) || (message.content === ("tu va bien willi.")) || (message.content === ("tu va bien willi..")) || (message.content === ("tu va bien willi...")))
         message.channel.send('Je vais bien merci :sunglasses: ')
-    if ((message.content === ("je t'aime Willi")) || (message.content === ("je t'aime willi")) || (message.content === ("jt'aime willi")) || (message.content === ("je t'aime willi !")))
+    if ((message.content === ("je t'aime Willi")) || (message.content === ("je t'aime willi")) || (message.content === ("jt'aime willi")) || (message.content === ("je t'aime willi !")) || (message.content === ("je t'aime Willi !")) || (message.content === ("je t'aime Willi !! <3")) || (message.content === ("je t'aime willi !!")))
         message.channel.send('Moi aussi :heart_eyes:')
     });
