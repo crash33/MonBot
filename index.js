@@ -10,7 +10,7 @@ bot.on('message', message => {
         message.delete()
     if ((message.content === ("je m'aime trop")) || (message.content === ("je m'aime")) || (message.content === ("je m'aime trop <3")) || (message.content === ("j'm'aime trop")) || (message.content === ("Je m'aime trop")) || (message.content === ("Je m'aime trop <3")) || (message.content === ("j'me kiff")))
         message.channel.send('Moi aussi :smirk:')
-    if ((message.content === ("tu va bien willi ?")) || (message.content === ("Tu va bien willi?")) || (message.content === ("Tu va bien Willi ?")) || (message.content === ("tu va bien Willi?")) || (message.content === ("Tu va bien willi")) || (message.content === ("Tu va bien willi.")) || (message.content === ("Tu va bien willi..")) || (message.content === ("Tu va bien willi...")))
+    if ((message.content === ("tu va bien willi ?")) || (message.content === ("Tu va bien willi?")) || (message.content === ("Tu va bien Willi ?")) || (message.content === ("tu va bien Willi?")) || (message.content === ("Tu va bien willi")) || (message.content === ("Tu va bien willi.")) || (message.content === ("Tu va bien willi..")) || (message.content === ("Tu va bien willi...")) || (message.content === ("tu va bien willi")) || (message.content === ("tu va bien willi.")) || (message.content === ("tu va bien willi..")) || (message.content === ("tu va bien willi...")))
         message.channel.send('Je vais bien merci :sunglasses: ')
     if ((message.content === ("je t'aime Willi")) || (message.content === ("je t'aime willi")) || (message.content === ("jt'aime willi")) || (message.content === ("je t'aime willi !")))
         message.channel.send('Moi aussi :heart_eyes:')
