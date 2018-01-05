@@ -6,6 +6,6 @@ bot.on('ready', () => {
 
 bot.login(process.env.TOKEN);
 bot.on('message', message => {
-   if ((message.content === ("salope") || (message.content === ("pute") || (message.content === ("connard"))
+   if (((message.content === ("salope")) || (message.content === ("pute")) || (message.content === ("connard")))
         message.delete()
     });
