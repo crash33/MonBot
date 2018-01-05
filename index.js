@@ -10,4 +10,6 @@ bot.on('message', message => {
         message.delete()
     if (message.content === ("pute"))
         message.delete()
+    if (messgae.content === ("!help"))
+        message.delete()
     });
