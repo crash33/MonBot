@@ -38,7 +38,7 @@ bot.on('message', message => {
         }
         */
         var rimage = (rdm[Math.random(0, rdm.Length)]);
-        var rrimage = rdm[1];
+        var rrimage = rdm[0];
         message.reply(rdm[randnum]);
         message.reply(rrimage);
     }
