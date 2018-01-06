@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const CLEAR_MESSAGES = '!clearMessages';
 var randnum = 0;
 var prefix = "+";
 var rdm = ['Arrete... tu va me faire rougir', 'Je te veux dans mon lit !', 'OUI', 'Suce moi !', 'test4', 'test5'];
@@ -25,7 +24,7 @@ function random(min, max) {
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "clear")) {
         message.channel.fetchMessages()
-        message.channel.bulkDelete(messages);
+        message.channel.bulkDelete(message);
         messagesDeleted = messages.array().length;
         message.channel.sendMessage("Message clear: "+messagesDeleted);
         
