@@ -45,6 +45,7 @@ bot.on('message', message => {
         coucou = coucou.replace(prefix, "");
         coucou = coucou.replace("remove", "");
         message.delete(coucou);
+        parseInt(coucou, 10);
         message.channel.send(coucou);
         message.channel.send("Message supprimé");
     }
