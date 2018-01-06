@@ -22,6 +22,11 @@ function random(min, max) {
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
 /*==================================================================================*/
-
+bot.on("message", function(message){
+    var input = message.content.toUpperCase();
+    if (input === "SALUT"){
+        message.channel.send("Hey !");
+    }
+});
       
           
