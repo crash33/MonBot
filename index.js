@@ -26,9 +26,6 @@ bot.on('message', message => {
         random();
         message.reply(rdm[randnum]);
     }
-    if ((input === ("Es tu une femme ou un homme?")) || (input === ("Es tu une femme ou un homme ?")) || (input === ("Es-tu une femme ou un homme?")) || (input === ("Es tu un homme ou une femme?")) || (input === ("Es tu un homme ou une femme ?")) || (input === ("Es-tu un homme ou une femme ?")) || (input === ("Es-tu un homme ou une femme?")) || (input === ("Es-que t'es une femme ou un homme ?"))){
-        message.channel.send("Je suis ta mère :sunglasses:");
-    }
 /*=====================[Je t'aime pas willi]=======================*/
     
     
