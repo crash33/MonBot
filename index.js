@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const CLEAR_MESSAGES = '!clearMessages';
 var randnum = 0;
+var prefix = "+";
 var rdm = ['Arrete... tu va me faire rougir', 'Je te veux dans mon lit !', 'OUI', 'Suce moi !', 'test4', 'test5'];
 bot.on('ready', () => {
     console.log("Pret");
@@ -22,13 +23,12 @@ function random(min, max) {
 }
 /*==================================================================================*/
 bot.on('message', message => {
-    if (message.content == CLEAR_MESSAGES) {
-        if (message.channel.type == 'text') {
-            message.channel.fetchMessages()
-            message.channel.bulkDelete(messages);
-            messagesDeleted = messages.array().length;
-            message.channel.sendMessage("Message clear: "+messagesDeleted);
-        }
+    if (message.content.startsWith(prefix + "clear")) {
+        message.channel.fetchMessages()
+        message.channel.bulkDelete(messages);
+        messagesDeleted = messages.array().length;
+        message.channel.sendMessage("Message clear: "+messagesDeleted);
+        
     }
 })
           
