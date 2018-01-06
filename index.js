@@ -29,7 +29,7 @@ bot.on('message', message => {
             message.reply("Ce n'est pas réciproque :laughing:");
         }
         if (randnum == 5){
-            message.reply("Pas moi <3");
+            message.reply("Pas moi :heart:");
         }
         if (randnum == 6){
             message.reply("Pas moi :laughing:");
