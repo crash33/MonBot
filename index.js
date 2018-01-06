@@ -35,7 +35,7 @@ bot.on('message', message => {
         coucou = coucou.replace(prefix, "");
         coucou = coucou.replace("oui", "");
         message.channel.send(coucou);
-        if (coucou.search(chien) = true) {
+        if (coucou.search('chien') = true) {
             message.channel.send("Je suis un chien :p");
         }
     }
