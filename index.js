@@ -50,10 +50,11 @@ function random(min, max) {
 }
 /*====================================================================*/
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "help")
+    if (message.content.startsWith(prefix + "help")){
         var help_embed = new Discord.RichEmbed();
         help_embed.setColor('#3498db');
         help_embed.addField("Commandes du bot:", "  " + (prefix) + "msg : Afficher les intéractions disponible.");
         message.channel.send(help_embed);
+    }   
 });
           
