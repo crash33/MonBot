@@ -39,8 +39,6 @@ bot.on('message', message => {
         message.channel.send("J'ai 48 ans :older_man:")
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
-    
-    }
 });
 function random(min, max) {
     min = Math.ceil(0);
