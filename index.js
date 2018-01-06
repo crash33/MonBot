@@ -23,6 +23,6 @@ bot.on('message', message => {
         var xpo = message.content;
         xpo = xpo.replace(prefix, "");
         xpo = xpo.replace("first", "");  
-        message.channel.send('Bot: ${xpo}');
+        message.channel.send('@{xpo}');
     }
 });
