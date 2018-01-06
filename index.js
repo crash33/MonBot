@@ -5,6 +5,7 @@ var prefix = "+";
 var rdm = ['Arrete... tu va me faire rougir', 'Je te veux dans mon lit !', 'OUI', 'Suce moi !', 'test4', 'test5'];
 bot.on('ready', () => {
     console.log("Pret");
+    bot.user.setPresence({ game: { name: "L'insaisissable"}});
 });
 
 bot.login(process.env.TOKEN);
@@ -21,11 +22,6 @@ function random(min, max) {
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
 /*==================================================================================*/
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "clear")) {
-        messages = message.channel.fetchMessages();
-        message.channel.bulkDelete(messages);
-    }
-})
-          
+
+      
           
