@@ -5,7 +5,7 @@ var prefix = "+";
 var rdm = ['Arrete... tu va me faire rougir', 'Je te veux dans mon lit !', 'OUI', 'Suce moi !', 'test4', 'test5'];
 bot.on('ready', () => {
     console.log("Pret");
-    bot.user.setPresence({ game: { name: "L'insaisissable"}});
+    bot.user.setPresence({ game: { name: "Modérer"}});
 });
 
 bot.login(process.env.TOKEN);
