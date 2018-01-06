@@ -29,11 +29,11 @@ bot.on('message', message => {
         sexe = sexe.replace("say", "")
         message.channel.send(sexe, {tts:true});
     }
-    if (message.content.startsWith(prefix + "sayd")) {
+    if (message.content.startsWith(prefix + "oui")) {
         message.delete();
         var coucou = message.content;
         coucou = coucou.replace(prefix, "");
-        coucou = coucou.replace("sayd", "");
+        coucou = coucou.replace("oui", "");
         message.channel.send(coucou);
     }
     
