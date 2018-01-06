@@ -18,6 +18,4 @@ bot.on('message', message => {
         message.channel.send("J'ai 48 ans :older_man:")
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Je ne suis que pour l'instant un prototype. :robot:")
-    if ((message.contant === ("willi!")) || (message.contant === ("Willi!")) || (message.contant === ("willi !")) || (message.contant === ("Willi !")) || (message.contant === ("Willi!!!")))
-        message.channel.send("Revenez me voir quand vous serez calmé :sweat_smile: ...")
     });
