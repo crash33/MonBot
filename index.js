@@ -26,6 +26,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "say")) {
         var sexe = message.content;
         sexe = sexe.replace(prefix, "");
+        sexe = sexe.replace("say", "")
         message.channel.send(sexe, {tts:true});
     }
     
