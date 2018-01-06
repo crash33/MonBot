@@ -50,5 +50,5 @@ bot.on('message', message => {
 function random(min, max) {
     min = Math.ceil(0);
     max = Math.floor(6);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
+    randnum = Math.floor(Math.random() * (max - min) + min);
 }
