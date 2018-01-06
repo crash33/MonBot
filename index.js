@@ -20,6 +20,9 @@ bot.on('message', message => {
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
     if (message.content.startsWith(prefix + "first")||message.content === prefix + "first") {
-        message.channel.send("Erreur ! Tu es déjà afk -_-");
+        var xpo = message.content;
+        xpo = xpo.Replace(prefix, "");
+        xpo = xpo.Replace("first", "");  
+        message.channel.send('@${xpo}');
     }
 });
