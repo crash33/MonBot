@@ -30,7 +30,7 @@ bot.on('message', message => {
 /*=====================[Je t'aime pas willi]=======================*/
     
     
-    if ((input === ("JE TE DETESTE WILLI")) || (input === ("WILLI TU ES CON")) || (input === ("WILLI T'ES MOCHE")) || (input === ("JE T'AIME PAS WILLI")) || (input === ("WILLI T'ES CON"))){
+    if ((input === ("JE TE DETESTE WILLI")) || (input === ("WILLI TU ES CON")) || (input === ("WILLI T'ES MOCHE")) || (input === ("JE T'AIME PAS WILLI")) || (input === ("WILLI T'ES CON")) || (input === ("T'ES DEBILLE WILLI")) || (input === ("T'ES CON WILLI"))){
         random();
         message.reply(rdm2[randnum]);
     }  
