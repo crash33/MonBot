@@ -20,6 +20,6 @@ bot.on('message', message => {
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
     if (msg.content.startsWith(prefix + "first")||msg.content === prefix + "first") {
-        return message.channel.sendMessage("Erreur ! Tu es déjà afk -_-", true);
+        return message.channel.sendMessage("Erreur ! Tu es déjà afk -_-");
     }
 });
