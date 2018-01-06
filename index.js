@@ -63,7 +63,7 @@ bot.on('message', message => {
             {
                 name: "Faire le mec",
                 value: "Willi t'es debille"
-            },
+            }]
         }});
     }   
 });
