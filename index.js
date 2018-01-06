@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 var prefix = "+";
-var xpo = message.content;
+var xpo = msg.content;
 bot.on('ready', () => {
     console.log("Pret");
 });
