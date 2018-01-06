@@ -23,11 +23,8 @@ function random(min, max) {
 /*==================================================================================*/
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "clear")) {
-        message.channel.fetchMessages()
-        message.channel.bulkDelete(message);
-        messagesDeleted = messages.array().length;
-        message.channel.sendMessage("Message clear: "+messagesDeleted);
-        
+        messages = message.channel.fetchMessages();
+        message.channel.bulkDelete(messages);
     }
 })
           
