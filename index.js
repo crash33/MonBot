@@ -49,5 +49,11 @@ function random(min, max) {
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
 /*====================================================================*/
-
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "help")
+        var help_embed = new Discord.RichEmbed();
+        help_embed.setColor('#3498db');
+        help_embed.addField("Commandes du bot:", "  " + (prefix) + "msg : Afficher les intéractions disponible.");
+        message.channel.send(help_embed);
+});
           
