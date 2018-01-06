@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 var prefix = "+";
-var xpo = msg.content;
 bot.on('ready', () => {
     console.log("Pret");
 });
@@ -21,8 +20,9 @@ bot.on('message', message => {
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
     if (message.content.startsWith(prefix + "first")||message.content === prefix + "first") {
+        var xpo = message.content;
         xpo = xpo.replace(prefix, "");
         xpo = xpo.replace("first", "");  
-        message.channel.send('${xpo}');
+        message.channel.send('**${xpo}**');
     }
 });
