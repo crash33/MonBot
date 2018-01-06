@@ -48,23 +48,24 @@ function random(min, max) {
     max = Math.floor(6);
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
-/*====================================================================*/
+/*============================[ Bot ]================================*/
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "help")){
         var help_embed = new Discord.RichEmbed();
         help_embed.setColor('#3498db');
         message.channel.send({embed: {
             color: 3447003,
-            title: "Modo",
+            title: "[BOT] Willi",
             fields: [{
-                name: "Message d'amour",
-                value: "Willi je t'aime"
+                name: "Version :",
+                value: "1.0.0"
             },
             {
-                name: "Faire le mec",
-                value: "Willi t'es debille"
+                name: "Auteur:",
+                value: "Crashmandu33"
             }]
         }});
     }   
 });
+/*=====================================================================*/
           
