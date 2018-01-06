@@ -46,7 +46,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "say")) {
         var sexe = message.content;
         sexe = sexe.replace(prefix, "");
-        message.channel.send(sexe);
+        message.channel.send(sexe, {tts:true});
 });
 function random(min, max) {
     min = Math.ceil(0);
