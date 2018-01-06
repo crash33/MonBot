@@ -29,6 +29,13 @@ bot.on('message', message => {
         sexe = sexe.replace("say", "")
         message.channel.send(sexe, {tts:true});
     }
+    if (message.content.startsWith(prefix + "sayd")) {
+        message.delete();
+        var coucou = message.content;
+        coucou = coucou.replace(prefix, "");
+        coucou = coucou.replace("sayd", "");
+        message.channel.send(coucou);
+    }
     
 });
 function random(min, max) {
