@@ -26,7 +26,7 @@ bot.on('message', message => {
             message.reply('Arrete... tu va me faire rougir :kissing_closed_eyes:');
         }
         if (randnum == 4){
-            message.reply("Ce n'est pas réciproque :laughing:", true);
+            message.reply("Ce n'est pas réciproque :laughing:", tts=true);
         }
         if (randnum == 5){
             message.reply("Pas moi :heart:");
