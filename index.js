@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 var prefix = "+";
 var randnum = 0;
 var rdm = ['Arrete... tu va me faire rougir', 'Je te veux dans mon lit !', 'OUI', 'Suce moi !', 'test4', 'test5'];
+var input = message.content.toUpperCase();
 bot.on('ready', () => {
     console.log("Pret");
 });
@@ -23,17 +24,12 @@ bot.on('message', message => {
         message.channel.send("J'ai 48 ans :older_man:")
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
+  
     if (message.content.startsWith(prefix + "say")) {
-        var sexe = message.content;
-        sexe = sexe.replace(prefix, "");
-        sexe = sexe.replace("say", "")
-        message.channel.send(sexe, {tts:true});
-    }
-    if (message.content.startsWith(prefix + "oui")) {
         message.delete();
         var coucou = message.content;
         coucou = coucou.replace(prefix, "");
-        coucou = coucou.replace("oui", "");
+        coucou = coucou.replace("say", "");
         message.channel.send(coucou);
         var popo = coucou.search("chien")
         if (popo = true) {
@@ -49,9 +45,9 @@ bot.on('message', message => {
         message.channel.send(coucou);
         message.channel.send("Message supprimé");
     }
-    if (message.includes('quenouille')) {
-        message.delete();
-        message.author.send("coucou");
+    if (input === "salut")
+    {
+        message.channel.send("Hey !!");
     }
 });
 function random(min, max) {
