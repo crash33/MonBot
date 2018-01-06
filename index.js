@@ -17,26 +17,6 @@ bot.on('message', message => {
         message.channel.send('Je vais bien merci :sunglasses: ')
     if ((message.content === ("je t'aime Willi")) || (message.content === ("je t'aime willi")) || (message.content === ("jt'aime willi")) || (message.content === ("je t'aime willi !")) || (message.content === ("je t'aime Willi !")) || (message.content === ("je t'aime Willi !! <3")) || (message.content === ("je t'aime willi !!")) || (message.content === ("je t'aime willi !! <3")) || (message.content === ("Jt'aime willi !!")) || (message.content === ("jt'aime willi <3")) || (message.content === ("jt'aime willi ! <3")) || (message.content === ("je t'aime willi <3")) || (message.content === ("Willi je t'aime <3")) || (message.content === ("willi je t'aime <3")) || (message.content === ("willi jt'aime")) || (message.content === ("Willi jt'aime")) || (message.content === ("Willi jt'aime <3")) || (message.content === ("Willi je t'aime <3")) || (message.content === ("Willi je t'aime")) || (message.content === ("willi je t'aime <3")) || (message.content === ("willi je t'aime")) || (message.content === ("Willi jtm <3")) || (message.content === ("Willi jtm")) || (message.content === ("willi jtm <3")) || (message.content === ("willi jtm")) || (message.content === ("jtm willi")) || (message.content === ("jtm Willi")) || (message.content === ("Jtm willi")) || (message.content === ("Jtm Willi")) || (message.content === ("jtm willi <3")) || (message.content === ("jtm Willi <3")) || (message.content === ("Jtm willi <3")) || (message.content === ("Jtm Willi <3"))){
         random();
-        /*
-        if (randnum == 1){
-            message.reply('Moi aussi :blush:');
-        }
-        if (randnum == 2){
-            message.reply(':blush:');
-        }
-        if (randnum == 3){
-            message.reply('Arrete... tu va me faire rougir :kissing_closed_eyes:');
-        }
-        if (randnum == 4){
-            message.reply("Ce n'est pas réciproque :laughing:");
-        }
-        if (randnum == 5){
-            message.reply("Pas moi :heart:");
-        }
-        if (randnum == 6){
-            message.reply("Pas moi :laughing:");
-        }
-        */
         message.reply(rdm[randnum]);
     }
     if ((message.content === ("t'as quel age willi?")) || (message.content === ("quel âge as tu willi?")) || (message.content === ("quel âge as-tu willi ?")) || (message.content === ("Quel âge as-tu willi?")) || (message.content === ("t'as quel age Willi?")) || (message.content === ("quel âge as tu Willi ?")) || (message.content === ("Willi t'as quel âge ?")) || (message.content === ("willi t'as quel age?")) || (message.content === ("t'as quel age willi ?")) || (message.content === ("T'as qu'elle age willi?")) || (message.content === ("t'as quel age Willi?")) || (message.content === ("willi quel age as tu ?")) || (message.content === ("willi quel age as tu?")) || (message.content === ("Willi quel age as tu ?")) || (message.content === ("Willi quel age as tu?")) || (message.content === ("Willi quel âge as-tu?")))
@@ -47,9 +27,12 @@ bot.on('message', message => {
         var sexe = message.content;
         sexe = sexe.replace(prefix, "");
         message.channel.send(sexe, {tts:true});
+    }
+    
 });
 function random(min, max) {
     min = Math.ceil(0);
     max = Math.floor(6);
     randnum = Math.floor(Math.random() * (max - min) + min);
+
 }
