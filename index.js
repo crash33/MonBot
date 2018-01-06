@@ -34,6 +34,12 @@ bot.on('message', message => {
         random();
         message.reply(rdm2[randnum]);
     }  
+    
+/*=========================[ TFK WILLI ?]===========================*/
+    
+    if ((input === ("QUE FAIS TU WILLI")) || (input === ("QUE FAIS TU WILLI?")) || (input === ("QUE FAIS TU WILLI ?")) || (input === ("WILLI TU FAIS QUOI")) || (input === ("WILLI TU FAIS QUOI?")) || (input === ("WILLI TU FAIS QUOI ?")) || (input === ("WILLI TFK")) || (input === ("WILLI TFK?")) || (input === ("WILLI TFK ?")) || (input === ("TFK WILLI")) || (input === ("TFK WILLI?")) || (input === ("TFK WILLI ?"))){
+        message.reply("Je m'occupe en ce moment même de la modération.");
+    }   
 });
 /*======================[ Systeme Random ]==========================*/
 
