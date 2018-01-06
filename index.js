@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 var prefix = "+";
 var randnum = 0;
 var rdm = ['Arrete... tu va me faire rougir', 'Je te veux dans mon lit !', 'OUI', 'Suce moi !', 'test4', 'test5'];
-var msg = message.content.toUpperCase();
 bot.on('ready', () => {
     console.log("Pret");
 });
@@ -50,7 +49,7 @@ bot.on('message', message => {
         message.channel.send(coucou);
         message.channel.send("Message supprimé");
     }
-    if (msg.includes("quenouille")) {
+    if (message.includes('quenouille')) {
         message.delete();
         message.author.send("coucou");
     }
