@@ -53,7 +53,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "help")){
         var help_embed = new Discord.RichEmbed();
         help_embed.setColor('#3498db');
-        help_embed.addField("Commandes du bot:", "  " + prefix + "msg : Afficher les intéractions disponible."," ""Ceci est un test");
+        help_embed.addField("Commandes du bot:", "  " + prefix + "msg : Afficher les intéractions disponible."," " + prefix + "Ceci est un test");
         message.channel.send(help_embed);
     }   
 });
