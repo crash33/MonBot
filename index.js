@@ -11,7 +11,7 @@ bot.on('ready', () => {
 bot.login(process.env.TOKEN);
 bot.on('message', message => {   
     var input = message.content.toUpperCase();
-    if ((input === ("JE T'AIME WILLI")) || (input === ("JE T'AIME WILLI !"))){
+    if ((input === ("JE T'AIME WILLI")) || (input === ("JE T'AIME WILLI !")) || (input === ("JTM WILLI")) || (input === ("JTM WILLI <3")) || (input === ("I LOVE WILLI"))){
         random();
         message.reply(rdm[randnum]);
     }
