@@ -4,7 +4,6 @@ var prefix = "+";
 var randnum = 0;
 bot.on('ready', () => {
     console.log("Pret");
-    message.channel.send('reload')
 });
 
 bot.login(process.env.TOKEN);
