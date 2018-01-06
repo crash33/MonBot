@@ -40,6 +40,13 @@ bot.on('message', message => {
             message.channel.send("Je suis un chien :p");
         }
     }
+    if (message.content.startsWith(prefix + "remove")) {
+        var coucou = message.content;
+        coucou = coucou.replace(prefix, "");
+        coucou = coucou.replace("remove", "");
+        message.delete(coucou);
+        message.channel.send("Message supprimé");
+    }
     
 });
 function random(min, max) {
