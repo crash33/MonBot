@@ -4,6 +4,7 @@ var prefix = "+";
 var randnum = 0;
 bot.on('ready', () => {
     console.log("Pret");
+    message.channel.send('reload')
 });
 
 bot.login(process.env.TOKEN);
@@ -35,7 +36,7 @@ bot.on('message', message => {
             message.reply("Pas moi :laughing:");
         }
     }
-    if ((message.content === ("t'as qu'elle age willi?")) || (message.content === ("quel âge as tu willi?")) || (message.content === ("qu'elle âge as-tu willi ?")) || (message.content === ("Qu'elle âge as-tu willi?")) || (message.content === ("t'as qu'elle age Willi?")) || (message.content === ("quel âge as tu Willi ?")) || (message.content === ("Willi t'as qu'elle âge ?")) || (message.content === ("willi t'as qu'elle age?")) || (message.content === ("t'as qu'elle age willi ?")) || (message.content === ("T'as qu'elle age willi?")) || (message.content === ("t'as qu'elle age Willi?")) || (message.content === ("willi qu'elle age as tu ?")) || (message.content === ("willi qu'elle age as tu?")) || (message.content === ("Willi qu'elle age as tu ?")) || (message.content === ("Willi qu'elle age as tu?")) || (message.content === ("Willi qu'elle âge as-tu?")))
+    if ((message.content === ("t'as quel age willi?")) || (message.content === ("quel âge as tu willi?")) || (message.content === ("quel âge as-tu willi ?")) || (message.content === ("Quel âge as-tu willi?")) || (message.content === ("t'as quel age Willi?")) || (message.content === ("quel âge as tu Willi ?")) || (message.content === ("Willi t'as quel âge ?")) || (message.content === ("willi t'as quel age?")) || (message.content === ("t'as quel age willi ?")) || (message.content === ("T'as qu'elle age willi?")) || (message.content === ("t'as quel age Willi?")) || (message.content === ("willi quel age as tu ?")) || (message.content === ("willi quel age as tu?")) || (message.content === ("Willi quel age as tu ?")) || (message.content === ("Willi quel age as tu?")) || (message.content === ("Willi quel âge as-tu?")) ||)
         message.channel.send("J'ai 48 ans :older_man:")
     if ((message.content === ("Willi")) || (message.content === ("Willi ?")) || (message.content === ("willi")) || (message.content === ("Willi?")) || (message.contant === ("willi?")))
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
