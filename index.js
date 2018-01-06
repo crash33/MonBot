@@ -44,15 +44,15 @@ bot.on('message', message => {
         message.channel.send(coucou);
         message.channel.send("Message supprimé");
     }
-    var input = message.content.toUpperCase();
-    if (input === "salut")
-    {
-        message.channel.send("Hey !!");
-    }
 });
 function random(min, max) {
     min = Math.ceil(0);
     max = Math.floor(6);
     randnum = Math.floor(Math.random() * (max - min) + min);
-
 }
+bot.on("message", function(message){
+    var input = message.content.toUpperCase();
+    if (input === "salut"){
+        bot.reply(message, "Hey !!");
+    }
+});
