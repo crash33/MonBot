@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var prefix = "+";
 var randnum = 0;
-var rdm = ['Arrete... tu va me faire rougir', 'test', 'test2', 'test3', 'test4', 'test5'];
+var rdm = ['1', 'Arrete... tu va me faire rougir', 'test', 'test2', 'test3', 'test4', 'test5'];
 bot.on('ready', () => {
     console.log("Pret");
 });
