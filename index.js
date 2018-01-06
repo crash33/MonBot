@@ -55,7 +55,15 @@ bot.on('message', message => {
         help_embed.setColor('#3498db');
         message.channel.send({embed: {
             color: 3447003,
-            description: "A very simple Embed!"
+            title: "Modo",
+            fields: [{
+                name: "Message d'amour",
+                value: "Willi je t'aime"
+            },
+            {
+                name: "Faire le mec",
+                value: "Willi t'es debille"
+            },
         }});
     }   
 });
