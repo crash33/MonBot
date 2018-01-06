@@ -49,9 +49,9 @@ bot.on('message', message => {
         message.channel.send(coucou);
         message.channel.send("Message supprimé");
     }
-    if (message.includes("alex")){
-        message.delete()
-        message.author.send('tu te calme martine')
+    if (message.includes("quenouille")) {
+        message.delete();
+        message.author.send("coucou");
     }
 });
 function random(min, max) {
