@@ -21,8 +21,8 @@ bot.on('message', message => {
         message.channel.send("Pour le moment je ne suis qu'un prototype. :robot:")
     if (message.content.startsWith(prefix + "first")||message.content === prefix + "first") {
         var xpo = message.content;
-        xpo = xpo.Replace(prefix, "");
-        xpo = xpo.Replace("first", "");  
+        xpo = xpo.replace(prefix, "");
+        xpo = xpo.replace("first", "");  
         message.channel.send('@${xpo}');
     }
 });
