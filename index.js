@@ -26,11 +26,6 @@ bot.on('message', message => {
         random();
         message.reply(rdm[randnum]);
     }
-    if (message.content.startsWith(prefix + "open")){
-        var tt = message.content;
-        message.delete(tt);
-        message.channel.send(tt, {tts:true});
-    }
 /*=====================[Je t'aime pas willi]=======================*/
     
     
