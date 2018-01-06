@@ -53,6 +53,6 @@ function random(min, max) {
 bot.on("message", function(message){
     var input = message.content.toUpperCase();
     if (input === "salut"){
-        bot.reply(message, "Hey !!");
+        message.channel.send(message, "Hey !!");
     }
 });
