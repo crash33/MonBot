@@ -74,4 +74,13 @@ bot.on('message', message => {
     }   
 });
 /*=====================================================================*/
+var messages = [];
+
+client.on('message', function(message) {
+    if (message.content.startsWith(prefix + "clear")){
+        messages.push(message);
+        client.deleteMessages(messages);
+        messages = [];
+    }       
+});
           
