@@ -39,6 +39,11 @@ bot.on('message', message => {
     if ((input === ("QUE FAIS TU WILLI")) || (input === ("QUE FAIS TU WILLI?")) || (input === ("QUE FAIS TU WILLI ?")) || (input === ("WILLI TU FAIS QUOI")) || (input === ("WILLI TU FAIS QUOI?")) || (input === ("WILLI TU FAIS QUOI ?")) || (input === ("WILLI TFK")) || (input === ("WILLI TFK?")) || (input === ("WILLI TFK ?")) || (input === ("TFK WILLI")) || (input === ("TFK WILLI?")) || (input === ("TFK WILLI ?")) || (input === ("TU FAIS QUOI WILLI?")) || (input === ("TU FAIS QUOI WILLI")) || (input === ("TU FAIS QUOI WILLI ?"))){
         message.reply("Je m'occupe en ce moment même de la modération.");
     }   
+    if ((input === ("WILLI DAB")) || (input === ("DAB WILLI")) || (input === ("FAIS UN DAB WILLI"))){
+        message.channel.send("OK, je DAB !!", {
+            file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
+        });
+    }
 });
 /*======================[ Systeme Random ]==========================*/
 
