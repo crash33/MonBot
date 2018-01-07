@@ -44,7 +44,7 @@ bot.on('message', message => {
     
     if ((input === ("WILLI DAB")) || (input === ("DAB WILLI")) || (input === ("FAIS UN DAB WILLI"))){
         message.channel.send("OK.. Je DAB !!!!", {
-            file: "rdm3[randnum]" 
+            file: "(rdm3[randnum])" 
         });
     }
 });
