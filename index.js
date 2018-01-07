@@ -69,7 +69,7 @@ bot.on('message', message => {
 });
 /*=====================================================================*/
 var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
-var willitest = ['willi' && 'dab'];
+var willitest = ['willi' & 'dab'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
