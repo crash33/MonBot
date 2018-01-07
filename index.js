@@ -73,6 +73,7 @@ var willitest2 = ['dab'];
 var willipas = ['pas', 'ne'];
 var williaime = ['aime', 'jtm', 'love'];
 bot.on('message', message => {
+    random();
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
     return badWords.includes(word);
