@@ -22,7 +22,7 @@ bot.on('ready', () => {
 
 bot.on('message', message => {   
     var input = message.content.toUpperCase();
-    if ((input === ("JE T'AIME WILLI")) || (input === ("JE T'AIME WILLI !")) || (input === ("JTM WILLI")) || (input === ("JTM WILLI <3")) || (input === ("I LOVE WILLI")) || (input === ("WILLI JE T'AIME")) || (input === ("WILLI JTM")) || (input === ("JE T AIME WILLI"))){
+    /*if ((input === ("JE T'AIME WILLI")) || (input === ("JE T'AIME WILLI !")) || (input === ("JTM WILLI")) || (input === ("JTM WILLI <3")) || (input === ("I LOVE WILLI")) || (input === ("WILLI JE T'AIME")) || (input === ("WILLI JTM")) || (input === ("JE T AIME WILLI"))){
         random();
         message.reply(rdm[randnum]);
     }
@@ -68,16 +68,17 @@ bot.on('message', message => {
 });
 /*=====================================================================*/
 var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
-var willitest = ['willi'];
+var willi = ['willi'];
 var willitest2 = ['dab'];
-var willipas = ['pas'];
+var willipas = ['pas', 'ne'];
+var williaime = ['aime', 'jtm', 'love'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
     return badWords.includes(word);
     });
-    var containsWillitest = words.some(word => {
-    return willitest.includes(word);
+    var containsWilli = words.some(word => {
+    return willi.includes(word);
     });
     var containsWillitest2 = words.some(word => {
     return willitest2.includes(word);
@@ -85,13 +86,19 @@ bot.on('message', message => {
     var containsWillipas = words.some(word => {
     return willipas.includes(word);
     });
+    var containsWilliaime = words.some(word => {
+    return williaime.includes(word);
+    });
     if (containsBadWord) {
         message.delete(1);
     }
-    if (containsWillitest) {
-        if (containsWillitest2) {
-            if (!containsWillipas) {
-                message.channel.send("OK.. Je DAB !!!!", {
+    if (containsWilli) {
+        if (!containsWillipas) {
+            if (containsWilliaime) {
+                message.reply(rdm[randnum]);
+            }
+            if (containsWillitest2) {
+                message.reply("OK.. Je DAB !!!!", {
                     file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
                 });
             }
