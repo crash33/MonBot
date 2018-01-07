@@ -94,10 +94,7 @@ bot.on('message', message => {
                 message.channel.send("OK.. Je DAB !!!!", {
                     file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
                 });
-            }else{
-                message.channel.send("pk pas");
             }
         }
     }
 });
-          
