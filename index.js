@@ -41,7 +41,7 @@ bot.on('message', message => {
     }   
 /*==================================================================*/
     
-    if ((input === ("WILLI DAB")) || (input === ("DAB WILLI")) || (input === ("FAIS UN DAB WILLI"))){
+    if ((input === ("WILLI DAB")) || (input === ("DAB WILLI")) || (input === ("FAIS UN DAB WILLI")) || (input === ("WILLI FAIS UN DAB"))){
         message.channel.send("OK.. Je DAB !!!!", {
             file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
         });
