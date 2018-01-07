@@ -74,15 +74,22 @@ bot.on('message', message => {
     }   
 });
 /*=====================================================================*/
-var badWords = ['salope', 'pute'];
+var badWords = ['salope', 'pute', 'con', 'bite'];
+var willitest = ['willi', 'dab'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
     return badWords.includes(word);
     });
+    var containsWillitest = words.some(word => {
+    return willitest.includes(word);
+    });
     if (containsBadWord) {
         message.delete(1);
         message.channel.send(":scream: !!!");
+    }
+    if (containsWillitest) {
+        message.channel.send("ok :p ")
     }
 });
 
