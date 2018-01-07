@@ -7,6 +7,7 @@ var prefix = "+";
 
 var rdm2 = ['Pourquoi dis tu ça?', ':sob:', "C'est méchant ..", "Je ne suis qu'un robot. Je suis gentil ..:sweat_smile:", 'Je suis un robot certe mais il y a des limites :triumph:', 'Ok...'];
 var rdm = ['Arrete... tu va me faire rougir :blush:', 'Moi aussi :heart:', "Désolé de te dire ça mais c'est pas réciproque :stuck_out_tongue_closed_eyes:", "Je ne suis qu'une intelligence artificielle.. :sweat_smile: ", ':heart_eyes: ', 'Pegi :underage:'];
+var rdm3 = ['http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg', 'https://pm1.narvii.com/6299/128a473bf98c5dba9dd2d4eac4b155c055570050_hq.jpg', 'https://i.imgur.com/vputvm4.jpg','https://pm1.narvii.com/6370/29445dd8783366ef8899c7ad9e3323c0f4d4b185_hq.jpg', 'https://cdn140.picsart.com/234113641004211.png?r1024x1024', 'https://www.spreadshirt.fr/image-server/v1/mp/designs/139969593,width=178,height=178/soccer-boy-dab-dance.png'];
 
 /*==========================[ Start ]============================*/
 
@@ -39,9 +40,11 @@ bot.on('message', message => {
     if ((input === ("QUE FAIS TU WILLI")) || (input === ("QUE FAIS TU WILLI?")) || (input === ("QUE FAIS TU WILLI ?")) || (input === ("WILLI TU FAIS QUOI")) || (input === ("WILLI TU FAIS QUOI?")) || (input === ("WILLI TU FAIS QUOI ?")) || (input === ("WILLI TFK")) || (input === ("WILLI TFK?")) || (input === ("WILLI TFK ?")) || (input === ("TFK WILLI")) || (input === ("TFK WILLI?")) || (input === ("TFK WILLI ?")) || (input === ("TU FAIS QUOI WILLI?")) || (input === ("TU FAIS QUOI WILLI")) || (input === ("TU FAIS QUOI WILLI ?"))){
         message.reply("Je m'occupe en ce moment même de la modération.");
     }   
+/*==================================================================*/
+    
     if ((input === ("WILLI DAB")) || (input === ("DAB WILLI")) || (input === ("FAIS UN DAB WILLI"))){
-        message.channel.send("OK, je DAB !!", {
-            file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
+        message.channel.send("OK.. Je DAB !!!!", {
+            file: "rdm3[randnum]" 
         });
     }
 });
