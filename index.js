@@ -70,7 +70,7 @@ bot.on('message', message => {
 var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
 var willitest = ['willi'];
 var willitest2 = ['dab'];
-var willipas =! ['pas'];
+var willipas = ['pas'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
@@ -90,7 +90,7 @@ bot.on('message', message => {
     }
     if (containsWillitest) {
         if (containsWillitest2) {
-            if (containsWillipas) {
+            if (!containsWillipas) {
                 message.channel.send("OK.. Je DAB !!!!", {
                     file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
                 });
