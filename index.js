@@ -1,3 +1,4 @@
+
 /*=====================[ Variables ]============================*/
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -38,14 +39,7 @@ bot.on('message', message => {
     
     if ((input === ("QUE FAIS TU WILLI")) || (input === ("QUE FAIS TU WILLI?")) || (input === ("QUE FAIS TU WILLI ?")) || (input === ("WILLI TU FAIS QUOI")) || (input === ("WILLI TU FAIS QUOI?")) || (input === ("WILLI TU FAIS QUOI ?")) || (input === ("WILLI TFK")) || (input === ("WILLI TFK?")) || (input === ("WILLI TFK ?")) || (input === ("TFK WILLI")) || (input === ("TFK WILLI?")) || (input === ("TFK WILLI ?")) || (input === ("TU FAIS QUOI WILLI?")) || (input === ("TU FAIS QUOI WILLI")) || (input === ("TU FAIS QUOI WILLI ?"))){
         message.reply("Je m'occupe en ce moment même de la modération.");
-    }   
-/*==================================================================*/
-    
-    if ((input === ("WILLI DAB")) || (input === ("DAB WILLI")) || (input === ("FAIS UN DAB WILLI")) || (input === ("WILLI FAIS UN DAB"))){
-        message.channel.send("OK.. Je DAB !!!!", {
-            file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
-        });
-    }
+    }       
 });
 /*======================[ Systeme Random ]==========================*/
 
@@ -75,7 +69,7 @@ bot.on('message', message => {
 });
 /*=====================================================================*/
 var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
-var willitest = ['willi' + 'dab'];
+var willitest = ['willi' && 'dab'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
@@ -93,5 +87,4 @@ bot.on('message', message => {
         });
     }
 });
-
           
