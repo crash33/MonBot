@@ -66,7 +66,7 @@ var willitest2 = ['dab'];
 var willipas = ['pas', 'ne', "n'"];
 var williaime = ['aime', 'aimes', 'jtm', 'love'];
 var willije = ['je', 'moi',];
-var willitu = ['vous', 'il', 'elle', 'nous', 'ils', 'elles', 'les'];
+var willitu = ['vous', 'il', 'elle', 'ils', 'elles', 'les'];
 bot.on('message', message => {
     random();
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
@@ -75,6 +75,12 @@ bot.on('message', message => {
     });
     var containsWilli = words.some(word => {
     return willi.includes(word);
+    });
+    var containsWillije = words.some(word => {
+    return willije.includes(word);
+    });
+    var containsWillitu = words.some(word => {
+    return willitu.includes(word);
     });
     var containsWillitest2 = words.some(word => {
     return willitest2.includes(word);
@@ -100,7 +106,13 @@ bot.on('message', message => {
             }
         }else{
             if (containsWilliaime) {
-                message.reply("Mais euh :sob:");
+                if (containsWillitu) {
+                    if (!containsWillije) {
+                        message.reply("je ne leur ai rien fait :sob:");
+                }
+                    }else{
+                        message.reply("Je t'ai rien fait :sob:")
+                    }
             }
         }
     }
