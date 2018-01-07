@@ -74,8 +74,8 @@ bot.on('message', message => {
     }   
 });
 /*=====================================================================*/
-var badWords = ['salope', 'pute', 'con', 'bite'];
-var willitest = ['willi', 'dab'];
+var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
+var willitest = ['willi' + 'dab'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
@@ -86,10 +86,11 @@ bot.on('message', message => {
     });
     if (containsBadWord) {
         message.delete(1);
-        message.channel.send(":scream: !!!");
     }
     if (containsWillitest) {
-        message.channel.send("ok :p ")
+        message.channel.send("OK.. Je DAB !!!!", {
+            file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
+        });
     }
 });
 
