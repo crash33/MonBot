@@ -22,13 +22,6 @@ bot.on('ready', () => {
 
 bot.on('message', message => {   
     var input = message.content.toUpperCase();
-    /*if ((input === ("JE T'AIME WILLI")) || (input === ("JE T'AIME WILLI !")) || (input === ("JTM WILLI")) || (input === ("JTM WILLI <3")) || (input === ("I LOVE WILLI")) || (input === ("WILLI JE T'AIME")) || (input === ("WILLI JTM")) || (input === ("JE T AIME WILLI"))){
-        random();
-        message.reply(rdm[randnum]);
-    }
-/*=====================[Je t'aime pas willi]=======================*/
-    
-    
     if ((input === ("JE TE DETESTE WILLI")) || (input === ("WILLI TU ES CON")) || (input === ("WILLI T'ES MOCHE")) || (input === ("JE T'AIME PAS WILLI")) || (input === ("WILLI T'ES CON")) || (input === ("T'ES DEBILLE WILLI")) || (input === ("T'ES CON WILLI"))){
         random();
         message.reply(rdm2[randnum]);
@@ -70,8 +63,10 @@ bot.on('message', message => {
 var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
 var willi = ['willi'];
 var willitest2 = ['dab'];
-var willipas = ['pas', 'ne'];
-var williaime = ['aime', 'jtm', 'love'];
+var willipas = ['pas', 'ne', "n'"];
+var williaime = ['aime', 'aimes', 'jtm', 'love'];
+var willije = ['je', 'moi',];
+var willitu = ['vous', 'il', 'elle', 'nous', 'ils', 'elles', 'les'];
 bot.on('message', message => {
     random();
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
@@ -102,6 +97,10 @@ bot.on('message', message => {
                 message.reply("OK.. Je DAB !!!!", {
                     file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
                 });
+            }
+        }else{
+            if (containsWilliaime) {
+                message.reply("Mais euh :sob:");
             }
         }
     }
