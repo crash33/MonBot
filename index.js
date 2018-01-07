@@ -97,4 +97,7 @@ bot.on('message', message => {
             }
         }
     }
+    if (message.content.startsWith(prefix + "clear")) {
+        message.delete(70);
+    }
 });
