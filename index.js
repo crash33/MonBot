@@ -1,4 +1,3 @@
-
 /*=====================[ Variables ]============================*/
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -71,6 +70,7 @@ bot.on('message', message => {
 var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
 var willitest = ['willi'];
 var willitest2 = ['dab'];
+var willipas =! ['pas'];
 bot.on('message', message => {
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
@@ -82,14 +82,19 @@ bot.on('message', message => {
     var containsWillitest2 = words.some(word => {
     return willitest2.includes(word);
     });
+    var containsWillipas = words.some(word => {
+    return willipas.includes(word);
+    });
     if (containsBadWord) {
         message.delete(1);
     }
     if (containsWillitest) {
         if (containsWillitest2) {
-            message.channel.send("OK.. Je DAB !!!!", {
-                file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
-            });
+            if (containsWillitest2) {
+                message.channel.send("OK.. Je DAB !!!!", {
+                    file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
+                });
+            }
         }
     }
 });
