@@ -25,13 +25,7 @@ bot.on('message', message => {
     if ((input === ("JE TE DETESTE WILLI")) || (input === ("WILLI TU ES CON")) || (input === ("WILLI T'ES MOCHE")) || (input === ("JE T'AIME PAS WILLI")) || (input === ("WILLI T'ES CON")) || (input === ("T'ES DEBILLE WILLI")) || (input === ("T'ES CON WILLI"))){
         random();
         message.reply(rdm2[randnum]);
-    }  
-    
-/*=========================[ TFK WILLI ?]===========================*/
-    
-    if ((input === ("QUE FAIS TU WILLI")) || (input === ("QUE FAIS TU WILLI?")) || (input === ("QUE FAIS TU WILLI ?")) || (input === ("WILLI TU FAIS QUOI")) || (input === ("WILLI TU FAIS QUOI?")) || (input === ("WILLI TU FAIS QUOI ?")) || (input === ("WILLI TFK")) || (input === ("WILLI TFK?")) || (input === ("WILLI TFK ?")) || (input === ("TFK WILLI")) || (input === ("TFK WILLI?")) || (input === ("TFK WILLI ?")) || (input === ("TU FAIS QUOI WILLI?")) || (input === ("TU FAIS QUOI WILLI")) || (input === ("TU FAIS QUOI WILLI ?"))){
-        message.reply("Je m'occupe en ce moment même de la modération.");
-    }       
+    }    
 });
 /*======================[ Systeme Random ]==========================*/
 
@@ -65,37 +59,52 @@ var willi = ['willi'];
 var willitest2 = ['dab'];
 var willipas = ['pas', 'ne', "n'"];
 var williaime = ['aime', 'aimes', 'jtm', 'love'];
+var willitfk = ['tfk', 'tu fais quoi', 'que fais tu'];
+var williwht = ['?'];
+var willip = [','];
 bot.on('message', message => {
     random();
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
     var containsBadWord = words.some(word => {
-    return badWords.includes(word);
-    });
+    return badWords.includes(word);         });
     var containsWilli = words.some(word => {
-    return willi.includes(word);
-    });
+    return willi.includes(word);            });
     var containsWillitest2 = words.some(word => {
-    return willitest2.includes(word);
-    });
+    return willitest2.includes(word);       });
     var containsWillipas = words.some(word => {
-    return willipas.includes(word);
-    });
+    return willipas.includes(word);         });
     var containsWilliaime = words.some(word => {
-    return williaime.includes(word);
-    });
+    return williaime.includes(word);        });
+    var containsWilliwht = words.some(word => {
+    return williwht.includes(word);        });
+    var containsWillitfk = words.some(word => {
+    return willitfk.includes(word);        });
+    var containsWillip = words.some(word => {
+    return willip.includes(word);        });
     if (containsBadWord) {
         message.delete(1);
     }
     if (containsWilli) {
-        if (!containsWillipas) {
+        if (!containsWillip){
             if (containsWilliaime) {
-                message.reply(rdm[randnum]);
+                if (!containsWillipas) {
+                    message.reply(rdm[randnum]);
+                }else{
+                    message.reply("J'ai rien fais moi :sob: ");
+                    }
+                if (containsWillitest2) {
+                    message.reply("OK.. Je DAB !!!!", {
+                        file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
+                    });
+                }
             }
-            if (containsWillitest2) {
-                message.reply("OK.. Je DAB !!!!", {
-                    file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
-                });
+            if (containsWillitfk) {
+                if (containsWilliwht) {
+                    message.reply("Je suis actuellement en plein développement :robot:");
+                }
             }
+        }else{
+           message.reply("Si tu souhaite me parler merci de ne pas utiliser de [,] "); 
         }
     }
 });
