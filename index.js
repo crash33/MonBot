@@ -91,11 +91,11 @@ bot.on('message', message => {
             }else{
                 message.reply("J'ai rien fais moi :sob: ");
                 }
+        }
         if (containsWillitest2) {
                 message.reply("OK.. Je DAB !!!!", {
                     file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
                 });
-            }
         }
         if (containsWillitfk) {
             if (containsWilliwht) {
