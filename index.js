@@ -62,6 +62,8 @@ var williaime = ['aime', 'aimes', 'jtm', 'love'];
 var willitfk = ['tfk', 'tu fais quoi', 'que fais tu'];
 var williwht = ['?'];
 var willip = [','];
+var willibonne = ['bonne'];
+var willinuit = ['nuit'];
 bot.on('message', message => {
     random();
     var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
@@ -81,6 +83,10 @@ bot.on('message', message => {
     return willitfk.includes(word);        });
     var containsWillip = words.some(word => {
     return willip.includes(word);        });
+    var containsWillibonne = words.some(word => {
+    return willibonne.includes(word);        });
+    var containsWillinuit = words.some(word => {
+    return willinuit.includes(word);        });
     if (containsBadWord) {
         message.delete(1);
     }
@@ -102,6 +108,11 @@ bot.on('message', message => {
                 message.reply("Je suis actuellement en plein développement :robot:");
             }else{
                 message.reply("Je m'occupe de la sécurité :guardsman: ");
+            }
+        }
+        if (containsWillibonne){
+            if (containsWillinuit){
+                message.reply("À toi aussi :wink: ");
             }
         }
     }
