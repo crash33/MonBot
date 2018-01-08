@@ -85,26 +85,24 @@ bot.on('message', message => {
         message.delete(1);
     }
     if (containsWilli) {
-        if (!containsWillip){
-            if (containsWilliaime) {
-                if (!containsWillipas) {
-                    message.reply(rdm[randnum]);
-                }else{
-                    message.reply("J'ai rien fais moi :sob: ");
-                    }
-                if (containsWillitest2) {
-                    message.reply("OK.. Je DAB !!!!", {
-                        file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
-                    });
+        if (containsWilliaime) {
+            if (!containsWillipas) {
+                message.reply(rdm[randnum]);
+            }else{
+                message.reply("J'ai rien fais moi :sob: ");
                 }
+            if (containsWillitest2) {
+                message.reply("OK.. Je DAB !!!!", {
+                    file: "http://www.rethinkrobotics.com/wp-content/uploads/2017/03/Dab-301x150-300x150.jpg" 
+                });
             }
-            if (containsWillitfk) {
-                if (containsWilliwht) {
-                    message.reply("Je suis actuellement en plein développement :robot:");
-                }
+        }
+        if (containsWillitfk) {
+            if (containsWilliwht) {
+                message.reply("Je suis actuellement en plein développement :robot:");
+            }else{
+                message.reply("Je m'occupe de la sécurité :guardsman: ");
             }
-        }else{
-           message.reply("Si tu souhaite me parler merci de ne pas utiliser de [,] "); 
         }
     }
 });
