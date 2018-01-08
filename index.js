@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const weather = require('weather-js');
+const weather = require('weather.js');
 var prefix = '+';
 bot.login(process.env.TOKEN);
 bot.on('ready', () => {
