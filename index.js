@@ -18,6 +18,6 @@ bot.on('message', message => {
             .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
         }
     }else{
-        message.channel.send("Tu n'as pas le grade suffisant pour faire cela")
+        message.channel.send("Tu n'as pas le grade suffisant pour faire cela");
     }
 });
