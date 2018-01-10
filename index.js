@@ -17,7 +17,5 @@ bot.on('message', message => {
             message.channel.bulkDelete(fetched)
             .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
         }
-    }else{
-        message.channel.send("Tu n'as pas le grade suffisant pour faire cela");
     }
 });
