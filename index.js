@@ -7,7 +7,7 @@ bot.on('ready', () => {
     console.log("Amy its ready !!");
     bot.user.setPresence({ game: { name: "Coder"}});
 });
-bot.on('message', message => {
+bot.on('message', async message => {
     if (message.member.roles.some(r=>["role_name"].includes(r.name)) ) {
         if(message.content.startsWith(prefix + "clear")) {
             const deleteCount = parseInt(args[0], 10);
