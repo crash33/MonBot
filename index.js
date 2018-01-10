@@ -8,7 +8,7 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "Coder"}});
 });
 bot.on('message', message => {
-    if (msg.startsWith(prefix + 'meteo')) { // This checks to see if the beginning of the message is calling the weather command.
+    if (message.startsWith(prefix + 'meteo')) { // This checks to see if the beginning of the message is calling the weather command.
         // You can find some of the code used here on the weather-js npm page in the description.
 
         weather.find({search: args.join(" "), degreeType: 'F'}, function(err, result) { // Make sure you get that args.join part, since it adds everything after weather.
