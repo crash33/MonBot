@@ -7,7 +7,7 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "Coder"}});
 });
 bot.on('message', async message => {
-    if (message.member.roles.some(r=>["role_name"].includes(r.name)) ) {
+    if (message.member.roles.some(r=>["Administrateur"].includes(r.name)) ) {
         if(message.content.startsWith(prefix + "clear")) {
             const deleteCount = parseInt(args[0], 10);
             if(!deleteCount || deleteCount < 2 || deleteCount > 100){
@@ -16,5 +16,7 @@ bot.on('message', async message => {
             const fetched = await message.channel.fetchMessages({count: deleteCount});
             message.channel.bulkDelete(fetched)
         }
+    }else{  
+        message.channel.send("Tu n'as pas la permission ^^'");
     }
 });
