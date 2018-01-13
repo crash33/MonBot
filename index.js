@@ -25,5 +25,4 @@ bot.on('message', message => {
     if (containsBadWord) {
         message.delete(1);
     }
-    )};
 )};
