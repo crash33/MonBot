@@ -15,4 +15,32 @@ bot.on('ready', () => {
     console.log("Pret");
     bot.user.setPresence({ game: { name: "Modérer"}});
 });
+var badWords = ['salope', 'pute', 'con', 'bite', 'connasse', 'penis', 'connard', 'fdp', 'merde', 'putain', 'encule', 'enculer', 'fils de pute', 'chier', 'emmerde', 'foutre', 'youporn', 'pornhub'];
 
+bot.on('message', message => {
+    random();
+    var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
+    var containsBadWord = words.some(word => {
+    return badWords.includes(word);         });
+    var containsWilli = words.some(word => {
+    return willi.includes(word);            });
+    var containsWillitest2 = words.some(word => {
+    return willitest2.includes(word);       });
+    var containsWillipas = words.some(word => {
+    return willipas.includes(word);         });
+    var containsWilliaime = words.some(word => {
+    return williaime.includes(word);        });
+    var containsWilliwht = words.some(word => {
+    return williwht.includes(word);        });
+    var containsWillitfk = words.some(word => {
+    return willitfk.includes(word);        });
+    var containsWillip = words.some(word => {
+    return willip.includes(word);        });
+    var containsWillibonne = words.some(word => {
+    return willibonne.includes(word);        });
+    var containsWillinuit = words.some(word => {
+    return willinuit.includes(word);        });
+    if (containsBadWord) {
+        message.delete(1);
+    }
+)};
