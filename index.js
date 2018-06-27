@@ -11,7 +11,7 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
         .setTitle("Informations")
         .setDescription("Pour se connecter à différents salons, veuillez vous rendre sur #authentification")
-        .addField("Grades","-Fortnite", true)
+        .addField("Grades","- Fortnite","- League Of Legends", true)
         message.channel.sendEmbed(embed);
     }
 });
