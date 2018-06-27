@@ -7,7 +7,7 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "Modé"}});
 });
 bot.on('message', message => {
-    if (message.content === "inf.use.less"){
+    if (message.content === "inf"){
         var embed = new Discord.RichEmbed()
         .setTitle("Informations")
         .setDescription("Pour se connecter à différents salons, veuillez vous rendre sur #authentification")
