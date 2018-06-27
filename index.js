@@ -15,7 +15,7 @@ bot.on('message', message => {
         .addField("Grades :", "Visiteur / Membre / Ami(e) / Modo / Admin", true)
         .setColor("0x0053ce")
         .setFooter("Family Games")
-        .setIcon("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
+        .setImage("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
         message.channel.sendEmbed(embed);
     }
 });
