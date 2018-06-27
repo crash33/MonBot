@@ -7,10 +7,11 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "Modé"}});
 });
 bot.on('message', message => {
-    if (message.content === "inf"){
+    if (message.content === "inf.use.less"){
         var embed = new Discord.RichEmbed()
         .setTitle("Informations")
         .setDescription("Pour se connecter à différents salons, veuillez vous rendre sur #authentification")
+        .addField("Grades","-Fortnite","-League Of Legends", true)
         message.channel.sendEmbed(embed);
     }
 });
