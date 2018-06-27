@@ -10,8 +10,12 @@ bot.on('message', message => {
     if (message.content === "inf"){
         var embed = new Discord.RichEmbed()
         .setTitle("Informations")
-        .setDescription("Pour se connecter à différents salons, veuillez vous rendre sur #authentification")
-        .addField("Grades","- Fortnite || - League Of Legends", true)
+        .setDescription("Pour se connecter à différents salons, veuillez vous rendre sur le salon textuel : #authentification")
+        .addField("Jeux :","- Fortnite     - League Of Legends", false)
+        .addField("Grades :", "Visiteur / Membre / Ami(e) / Modo / Admin" true)
+        .setColor("0x0053ce")
+        .setFooter("Family Games")
+        .setIcon("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
         message.channel.sendEmbed(embed);
     }
 });
