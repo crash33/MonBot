@@ -10,7 +10,7 @@ bot.on('message', message => {
     if (message.content === "inf"){
         var embed = new Discord.RichEmbed()
         .setTitle("Informations")
-        .setField("Pour vous connecter sur les différents salons Gaming :", "Veuillez vous rendre sur le salon textuel : #authentification", true)
+        .setDescription("Veuillez vous rendre sur le salon textuel : #authentification   Pour vous connecter sur les différents salons Gaming")
         .addField("Jeux :","- Fortnite     - League Of Legends", false)
         .addField("Grades :", "Visiteur / Membre / Ami(e) / Modo / Admin", true)
         .setColor("0x0053ce")
