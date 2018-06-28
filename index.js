@@ -18,5 +18,14 @@ bot.on('message', message => {
         .setThumbnail("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
         message.channel.sendEmbed(embed);
     }
+    if (message.content === "sond"){
+        var embed.sond = new Discord.RichEmbed()
+        .setAuthor("staff", "https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
+        .setTitle("Sondage")
+        .setDescription("Comment trouvez-vous ce nouveau système ?")
+        .setColor("0xB40404")
+        .setFooter("Family Games")
+        message.channel.sendEmbed(embed.sond);
+    }
 });
 
