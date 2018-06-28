@@ -19,13 +19,13 @@ bot.on('message', message => {
         message.channel.sendEmbed(embed);
     }
     if (message.content === "sond"){
-        var embed.sond = new Discord.RichEmbed()
+        var embedsond = new Discord.RichEmbed()
         .setAuthor("staff", "https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
         .setTitle("Sondage")
         .setDescription("Comment trouvez-vous ce nouveau système ?")
         .setColor("0xB40404")
         .setFooter("Family Games")
-        message.channel.sendEmbed(embed.sond);
+        message.channel.sendEmbed(embedsond);
     }
 });
 
