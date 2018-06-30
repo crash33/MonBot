@@ -31,10 +31,7 @@ bot.on('message', message => {
         }
     }
 });
-clientDiscord.on('messageReactionAdd' , (reaction, user) => {
-    if(reaction.emoji.name === ":one:"){
-        let guild = bot.guilds.find("name", "Family Games");
-        var channel = guild.channels.find("name", "informations");
-    }       
+
+bot.on('messageReactionAdd', (reaction, user) => { 
 });
 
