@@ -31,4 +31,8 @@ bot.on('message', message => {
         }
     }
 });
+clientDiscord.on('messageReactionAdd' , (reaction, user) => {
+    if(reaction.emoji.name === ":one:")
+        
+});
 
