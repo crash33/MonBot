@@ -7,7 +7,7 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "Modérer"}});
 });
 bot.on('message', message => { 
-    let memberGotRole = message.member.roles.find('id', message.guild.roles.find("name", "Admin").id)
+    let memberGotRole = message.member.roles.find('id', message.guild.roles.find("name", "Administration").id)
     if (memberGotRole){
         if (message.content === "inf"){
             var embed = new Discord.RichEmbed()
