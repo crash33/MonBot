@@ -16,12 +16,12 @@ bot.on('message', message => {
             .addField("Réglement :","Il est interdit d'insulter mais aussi de faire de la publicité ou d'avoir un pseudo inapproprié. ", false)
             .setColor("0x0053ce")
             .setFooter("Family")
-            .setThumbnail("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
+            .setThumbnail("https://image.noelshack.com/fichiers/2018/34/2/1534888371-hp.png")
             message.channel.sendEmbed(embed);
         }
         if (message.content === "sondage"){
             var embedsond = new Discord.RichEmbed()
-            .setAuthor("staff", "https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
+            .setAuthor("staff", "https://image.noelshack.com/fichiers/2018/34/2/1534888371-hp.png")
             .setTitle("Sondage")
             .setDescription("Aimez-vous le serveur ?")
             .setColor("0xB40404")
