@@ -27,11 +27,8 @@ bot.on('message', message => {
             .setColor("0xB40404")
             .setFooter("Family")
             .then(function (message) {
-              message.react("👍")
-              message.react("👎")
-              message.pin()
-              message.delete()
-            })
+            message.react("👍")
+            message.react("👎")
             message.channel.sendEmbed(embedsond);
         }
     }
