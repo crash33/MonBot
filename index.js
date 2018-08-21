@@ -12,21 +12,20 @@ bot.on('message', message => {
         if (message.content === "inf"){
             var embed = new Discord.RichEmbed()
             .setTitle("Informations")
-            .setDescription("Ce serveur est en Bêta")
+            .setDescription("Ce serveur est en Bêta-Test")
             .addField("Réglement :","Il est interdit d'insulter, de faire de la publicité et d'avoir un pseudo inapproprié ", false)
-            .addField("Recrutement Staff:", "Fermé", true)
             .setColor("0x0053ce")
             .setFooter("Family")
             .setThumbnail("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
             message.channel.sendEmbed(embed);
         }
-        if (message.content === "sond"){
+        if (message.content === "sondage"){
             var embedsond = new Discord.RichEmbed()
             .setAuthor("staff", "https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
             .setTitle("Sondage")
-            .setDescription("Comment trouvez-vous ce nouveau système ?")
+            .setDescription("Aimez-vous le serveur ?")
             .setColor("0xB40404")
-            .setFooter("Family Games")
+            .setFooter("Family")
             message.channel.sendEmbed(embedsond);
         }
     }
