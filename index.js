@@ -26,8 +26,8 @@ bot.on('message', message => {
             .setDescription("Aimez-vous le serveur ?")
             .setColor("0xB40404")
             .setFooter("Family")
-            embedMessage.react("👍");
-            embedMessage.react("👎");
+            embedsond.react("👍");
+            embedsond.react("👎");
             message.channel.sendEmbed(embedsond);
         }
     }
