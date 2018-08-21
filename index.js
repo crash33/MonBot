@@ -27,7 +27,7 @@ bot.on('message', message => {
             .setColor("0xB40404")
             .setFooter("Family")
             message.channel.sendEmbed(embedsond).then(embedMessage => {
-            embedMessage.react("👍") });
+            embedMessage.react("👍"),embedMessage.react("👎")});
         }
     }
 });
