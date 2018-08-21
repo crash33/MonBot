@@ -16,12 +16,12 @@ bot.on('message', message => {
             .addField("Réglement :","Il est interdit d'insulter mais aussi de faire de la publicité ou d'avoir un pseudo inapproprié. ", false)
             .setColor("0x0053ce")
             .setFooter("Family")
-            .setThumbnail("https://ibb.co/kDf8oK")
+            .setThumbnail("http://zupimages.net/viewer.php?id=18/34/f6xe.png")
             message.channel.sendEmbed(embed);
         }
         if (message.content === "sondage"){
             var embedsond = new Discord.RichEmbed()
-            .setAuthor("staff", "https://ibb.co/kDf8oK")
+            .setAuthor("staff", "http://zupimages.net/viewer.php?id=18/34/f6xe.png")
             .setTitle("Sondage")
             .setDescription("Aimez-vous le serveur ?")
             .setColor("0xB40404")
