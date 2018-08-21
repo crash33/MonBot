@@ -13,7 +13,7 @@ bot.on('message', message => {
             var embed = new Discord.RichEmbed()
             .setTitle("Informations")
             .setDescription("Ce serveur est en Bêta-Test")
-            .addField("Réglement :","Il est interdit d'insulter, de faire de la publicité et d'avoir un pseudo inapproprié ", false)
+            .addField("Réglement :","Il est interdit d'insulter, de faire de la publicité et d'avoir un pseudo inapproprié. ", false)
             .setColor("0x0053ce")
             .setFooter("Family")
             .setThumbnail("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
