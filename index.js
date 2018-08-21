@@ -12,11 +12,11 @@ bot.on('message', message => {
         if (message.content === "inf"){
             var embed = new Discord.RichEmbed()
             .setTitle("Informations")
-            .setDescription("Veuillez vous rendre sur le salon textuel : #authentification   Pour vous connecter sur les différents salons Gaming")
-            .addField("Jeux :","- Fortnite     - League Of Legends", false)
-            .addField("Grades :", "Visiteur / Membre / Ami(e) / Modo / Admin", true)
+            .setDescription("Ce serveur est en Bêta")
+            .addField("Réglement :","Il est interdit d'insulter, de faire de la publicité et d'avoir un pseudo inapproprié ", false)
+            .addField("Recrutement Staff:", "Fermé", true)
             .setColor("0x0053ce")
-            .setFooter("Family Games")
+            .setFooter("Family")
             .setThumbnail("https://image.noelshack.com/fichiers/2018/26/3/1530109504-logo.png")
             message.channel.sendEmbed(embed);
         }
