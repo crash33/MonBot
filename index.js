@@ -29,6 +29,16 @@ bot.on('message', message => {
             message.channel.sendEmbed(embedsond).then(embedMessage => {
             embedMessage.react("👍"),embedMessage.react("👎")});
         }
+        if (message.content === "choixpeau"){
+            var embedss = new Discord.RichEmbed()
+            .setAuthor("staff", "https://zupimages.net/up/18/34/f6xe.png")
+            .setTitle("Aide :")
+            .setDescription("Le choixpeau ne sait pas dans quelle maison te mettre, aide le en utilisant la commande suivante : ?gryffondor ,?serpentard ,?poufsouffle ,?serdaigle")
+            .setColor("0x0E8E7D")
+            .setFooter("Family")
+            message.channel.sendEmbed(embedss);
+           
+        }
     }
 });
 
