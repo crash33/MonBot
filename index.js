@@ -29,7 +29,7 @@ bot.on('message', message => {
             message.channel.sendEmbed(embedsond).then(embedMessage => {
             embedMessage.react("👍"),embedMessage.react("👎")});
         }
-        if (message.content === "choixpeau"){
+        if (message.content === "choixxxpeau"){
             var embedss = new Discord.RichEmbed()
             .setAuthor("staff", "https://zupimages.net/up/18/34/f6xe.png")
             .setTitle("Aide :")
