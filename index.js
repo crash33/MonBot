@@ -33,7 +33,7 @@ bot.on('message', message => {
             var embedss = new Discord.RichEmbed()
             .setAuthor("staff", "https://zupimages.net/up/18/34/f6xe.png")
             .setTitle("Aide :")
-            .setDescription("Le choixpeau ne sait pas dans quelle maison te mettre, aide le en utilisant la commande suivante : ?gryffondor ,?serpentard ,?poufsouffle ,?serdaigle")
+            .setDescription("Le choixpeau ne sait pas dans quelle maison te mettre, aide le en utilisant le sort suivante : HP-gryffondor ,HP-serpentard ,HP-poufsouffle ,HP-serdaigle")
             .setColor("0x0E8E7D")
             .setFooter("Family")
             message.channel.sendEmbed(embedss);
